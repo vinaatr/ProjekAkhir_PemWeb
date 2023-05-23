@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Yummy Queen!</title>
+  <link href="/dashboard/images/logoyq.png" rel="icon" type="image/png" />
+
+  <link rel="stylesheet" href="coba.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+  <div class="menu">
+    <nav>
+      <input type="checkbox" id="show-search">
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <div class="content">
+      <div class="logo"><img src="yqheadbar.png"></div>
+        <ul class="links">
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="#" class="desktop-link">Resep</a>
+            <input type="checkbox" id="show-features">
+            <label for="show-features">Features</label>
+            <ul>
+              <li><a href="#">Makanan</a></li>
+              <li><a href="#">Minuman</a></li>
+              <li><a href="#">Dessert</a></li>
+              <li><a href="kue.html">Kue</a></li>
+            </ul>
+          </li>
+          <li><a href="about us.html">About Us</a></li>
+        </ul>
+      </div>
+      <div class="search-icon">
+        <span class="fas fa-search"></span>
+     </div>
+     <div class="cancel-icon">
+        <span class="fas fa-times"></span>
+     </div>
+     <form action="#">
+        <input type="search" class="search-data" placeholder="Search" required>
+        <button type="submit" class="fas fa-search"></button>
+     </form>
+    </nav>
+  </div>
+  <div class="text">
+    <h2>RESEP TERKINI</h2>
+  </div>
+
+  <div class="slider">
+    <div class="slides">
+      <input type="radio" name="radio-btn" id="radio1">
+      <input type="radio" name="radio-btn" id="radio2">
+      <input type="radio" name="radio-btn" id="radio3">
+      <input type="radio" name="radio-btn" id="radio4">
+      <input type="radio" name="radio-btn" id="radio5">
+      
+      <div class="slide first">
+        <img src="1.png" alt="">
+      </div>
+      <div class="slide">
+        <img src="2.png" alt="">
+      </div>
+      <div class="slide">
+        <img src="3.png" alt="">
+      </div>
+      <div class="slide">
+        <img src="4.png" alt="">
+      </div>
+      <div class="slide">
+        <img src="5.png" alt="">
+      </div>
+    </div>
+
+    <div class="navigation-auto">
+      <div class="auton-btn1"></div>
+      <div class="auton-btn2"></div>
+      <div class="auton-btn3"></div>
+      <div class="auton-btn4"></div>
+      <div class="auton-btn5"></div>
+    </div>
+
+    <div class="navigation-manual">
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+      <label for="radio4" class="manual-btn"></label>
+      <label for="radio5" class="manual-btn"></label>
+    </div>   
+  </div>
+
+  <script type="text/javascript">
+    var counter = 1;  
+    setInterval(function(){
+      document.getElementById('radio'+ counter).checked =true;
+      counter++;
+      if(counter > 5){
+        counter = 1;
+      }
+    }, 4000);
+  </script>
+
+  <div class="hiasan">
+    <div class="bgkanan">
+      <img src="HIASAN KANAN.png" alt="">
+    </div>
+    <div class="bgkiri">
+      <img src="HIASAN KIRI.png" alt="">
+    </div>
+  </div>
+</body>
+</html>
